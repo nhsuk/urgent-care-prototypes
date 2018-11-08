@@ -4,7 +4,7 @@
   "description": "NHS.UK front-end prototyping kit and example pages",
   "scripts": {
     "prepare": "npm run build",
-    "build": "npm i -g gulp-cli && gulp build",
+    "build": "npm i gulp-cli && gulp build",
     "start": "node app.js",
     "prewatch": "npm run build",
     "watch": "concurrently \"gulp\" \"nodemon app.js --config nodemon.json -q\"",
