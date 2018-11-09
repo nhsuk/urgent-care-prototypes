@@ -1,0 +1,58 @@
+{% set title = 'Urgent care finder' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends 'includes/site-layout.html' %}
+
+{% block body %}
+{% block breadcrumb %}
+    {{ breadcrumbs('/', 'Home', '/urgent-care-finder', 'Urgent care finder') }}
+{% endblock %}
+<div class="nhsuk-o-width-container">
+    <main id="main-content" class="nhsuk-o-width-wrapper util-nofocus">
+        <div class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+                <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+                    <div class="nhsuk-page-heading">
+                        <h1>Find a urgent treatment centre</h1>
+                    </div>
+                </div>
+                <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+                    <div class="nhsuk-reading-width">
+                        <div class="nhsuk-page-content">
+                            <div class="nhsuk-app__search">
+                                <div class="search-container">
+                                    <form method="get" class="form" action="/urgent-care-results">
+                                        <div>
+                                            <div class="form-group ">
+                                                <label class="nhsuk-heading-m" for="location">Enter a town, city or postcode in England</label>
+                                            </div>
+                                            <input autocomplete="off" type="text" class="form-control" name="location" id="location" value="">
+                                        </div>
+                                        <div class="form-item-wrapper">
+                                            <div class="form-group">
+                                                <input type="submit" class="button" value="Search">
+                                            </div>
+                                        </div>
+                                        <p><a class="button button--secondary geo-locate--locate" href="#">Use your location</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script>
+    var head = document.getElementsByTagName("head")[0],
+    cssLink = document.createElement("link");
+    
+    cssLink.href = "/assets/css/urgent-care-finder.min.css";
+    cssLink.id = "dynamic-css";
+    cssLink.media = "screen";
+    cssLink.type = "text/css";
+    cssLink.rel = "stylesheet";
+
+    head.appendChild(cssLink);
+</script>
+{% endblock %}
