@@ -4,8 +4,6 @@ Prototypes of the three possible solutions to improving urgent care signposting,
 
 Created using <a href="https://github.com/nhsuk/frontend">NHS.UK prototyping kit</a>.
 
-Examples and code snippets of NHS.UK frontend components and elements can be found at our <a href="https://nhsuk-redesign.azurewebsites.net">NHS.UK prototyping and example website</a>.
-
 ## Installation
 
 Install the long-term support (LTS) version of <a href="https://nodejs.org/en/">Node.js</a>, which includes NPM.
@@ -17,6 +15,11 @@ Run the project in development mode `npm run watch` and visit <a href="http://lo
 ## Contributing
 
 Follow our [contributing guide](https://github.com/nhsuk/frontend/blob/master/.github/CONTRIBUTING.md) to make changes to the code base
+
+## Deploying
+
+ Following a successful pull request and merge, the code will automatically be deployed to our <a href="#">prototyping website</a>.
+
 
 ## Licence
 
