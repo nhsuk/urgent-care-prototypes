@@ -4,7 +4,7 @@
 
 {% block body %}
 {% block breadcrumb %}
-    {{ breadcrumbs('/', 'Home', '/urgent-care-finder', 'Urgent care finder') }}
+    {{ breadcrumbs('#', 'Home', '#', 'Services near you') }}
 {% endblock %}
 <div class="nhsuk-o-width-container">
     <main id="main-content" class="nhsuk-o-width-wrapper util-nofocus">
@@ -12,9 +12,11 @@
             <div class="nhsuk-o-grid">
                 <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
                     <div class="nhsuk-page-heading">
-                        <h1>Find a urgent treatment centre</h1>
+                        <h1>{{ heading }}</h1>
                     </div>
                 </div>
+                {% block inset %}
+                {% endblock %}
                 <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
                     <div class="nhsuk-reading-width">
                         <div class="nhsuk-page-content">
@@ -32,7 +34,9 @@
                                                 <input type="submit" class="button" value="Search">
                                             </div>
                                         </div>
-                                        <p><a class="button button--secondary geo-locate--locate" href="#">Use your location</a></p>
+                                        <div class="geo-locate">
+                                            <p><a class="button button--secondary geo-locate--locate" href="#">Use your location</a></p>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
