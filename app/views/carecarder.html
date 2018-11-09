@@ -1,27 +1,271 @@
 {% set title = 'Urgent care care carder' %} {% extends 'includes/site-layout.html' %} {% block body %}
+
+<nav class="nhsuk-c-breadcrumb" aria-label="Breadcrumb">
+        <div class="nhsuk-o-width-container">
+          <ol class="nhsuk-c-breadcrumb__list">
+            
+              
+                <li class="nhsuk-c-breadcrumb__item">
+                  <a href="/" class="nhsuk-c-breadcrumb__link">Home</a>
+                  
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                      <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_shared/img/icon-chevron-right-grey.f562fde428e8.png" xlink:href="">
+                    </image></svg>
+                  
+                </li>
+              
+            
+              
+                <li class="nhsuk-c-breadcrumb__item">
+                  <a href="/conditions/" class="nhsuk-c-breadcrumb__link">Health A-Z</a>
+                  
+                </li>
+              
+            
+              
+            
+          </ol>
+          <p class="nhsuk-c-breadcrumb__back">
+            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+              <image class="nhsuk-icon__chevron-left nhsuk-icon__chevron-left--fallback" src="/static/nhsuk_shared/img/icon-chevron-left-blue.18f54059387e.png" xlink:href="">
+            </image></svg>
+            <a href="/conditions/" class="nhsuk-c-breadcrumb__backlink">Back to Health A-Z</a></p>
+        </div>
+      </nav>
 <div class="nhsuk-o-width-container">
     <main class="nhsuk-o-main-wrapper" id="main-content">
         <div class="nhsuk-o-grid">
-            <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-thirds">
-                <div class="nhsuk-c-care-card nhsuk-c-care-card--red">
-                    <div class="nhsuk-c-care-card__heading">
-                        <h3>Ask for an urgent GP appointment if you have:</h3>
-                    </div>
-                    <div class="nhsuk-c-care-card__content">
-                        <ul>
-                            <li>pain in your sides or lower back</li>
-                            <li>a very high temperature or you feel hot and shivery </li>
-                            <li>felt sick or been sick</li>
-                            <li>
-                                <a href="https://www.nhs.uk/conditions/diarrhoea-and-vomiting/">diarrhoea</a>
-                            </li>
-                        </ul>
-                        <p>It could be a kidney infection. This can be serious if not treated.</p>
-                        <p>If you cannot see a GP, go to
-                            <a href="https://111.nhs.uk/">111.nhs.uk</a> or
-                            <a href="tel: 111">call 111</a> to find out the right place to get help.</p>
-                    </div>
+            <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds">
+                <div class="nhsuk-page-heading">
+                    <h1>
+                        Urinary tract infections (UTIs)
+                    </h1>
                 </div>
+                <div class="nhsuk-page-content">
+                    <section id="">
+                        <p>
+                            <strong>UTIs can affect different parts of your urinary tract, including your bladder (cystitis), urethra
+                                (urethritis) or kidneys (kidney infection). Most UTIs can be easily treated with antibiotics.</strong>
+                        </p>
+                    </section>
+                    <section id="symptoms">
+                        <h2>Check if it's a UTI</h2>
+
+                        <p>Symptoms of a UTI include:</p>
+
+                        <ul>
+                            <li>needing to pee suddenly or more often than usual</li>
+                            <li>pain or a burning sensation when peeing</li>
+                            <li>smelly or cloudy pee</li>
+                            <li>
+                                <a href="https://www.nhs.uk/conditions/blood-in-urine/">blood in your pee</a>
+                            </li>
+                            <li>pain in your lower tummy</li>
+                            <li>feeling tired and unwell</li>
+                            <li>in older people, changes in behaviour such as severe confusion or agitation</li>
+                        </ul>
+                        <div class="nhsuk-c-panel nhsuk-c-panel__warning">
+                            <h3 class="nhsuk-c-panel__header">Important</h3>
+                            <p>UTI symptoms may be difficult to spot in people with dementia.</p>
+
+                        </div>
+
+                        <p>Children with UTIs may also:</p>
+
+                        <ul>
+                            <li>appear generally unwell – babies may be irritable, not feed properly and have a high temperature
+                                (fever) of 37.5C or above</li>
+                            <li>wet the bed or wet themselves</li>
+                            <li>deliberately hold in their pee because it stings</li>
+                        </ul>
+                    </section>
+                    <section id="when-to-get-medical-help">
+
+                        <div class="nhsuk-c-care-card nhsuk-c-care-card--blue">
+                            <div class="nhsuk-c-care-card__heading">
+                                <h2 class="nhsuk-heading-m">See a GP if:</h2>
+                            </div>
+                            <div class="nhsuk-c-care-card__content">
+                                <ul>
+                                    <li>you're a man with symptoms of a UTI</li>
+                                    <li>you're pregnant and have symptoms of a UTI</li>
+                                    <li>your child has symptoms of a UTI</li>
+                                    <li>you're caring for someone elderly who may have a UTI</li>
+                                    <li>you haven't had a UTI before</li>
+                                    <li>you have blood in your pee</li>
+                                    <li>your symptoms don't improve within a few days</li>
+                                    <li>your symptoms come back after treatment</li>
+                                </ul>
+
+                                <p>If you have symptoms of a
+                                    <a href="https://www.nhs.uk/conditions/sexually-transmitted-infections-stis/">sexually transmitted infection</a>, you can also get treatment from a sexual health clinic.</p>
+
+                                <p>
+                                    <a href="https://www.nhs.uk/Service-Search/Sexual%20health%20services/LocationSearch/1847">Find a sexual health clinic</a>
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="nhsuk-c-care-card nhsuk-c-care-card--red">
+                                <div class="nhsuk-c-care-card__heading">
+                                    <h3>Ask for an urgent GP appointment if you have:</h3>
+                                </div>
+                                <div class="nhsuk-c-care-card__content">
+                                    <ul>
+                                        <li>pain in your sides or lower back</li>
+                                        <li>a very high temperature or you feel hot and shivery </li>
+                                        <li>felt sick or been sick</li>
+                                        <li>
+                                            <a href="https://www.nhs.uk/conditions/diarrhoea-and-vomiting/">diarrhoea</a>
+                                        </li>
+                                    </ul>
+                                    <p>It could be a kidney infection. This can be serious if not treated.</p>
+                                    <p>If you cannot see a GP, go to
+                                        <a href="https://111.nhs.uk/">111.nhs.uk</a> or
+                                        <a href="tel: 111">call 111</a> to find out the right place to get help.</p>
+                                </div>
+                            </div>
+
+                        <h3>What happens at your appointment</h3>
+
+                        <p>You'll be asked about your symptoms and may need to give a urine sample to confirm you have a UTI.</p>
+
+                        <p>A urine test helps to rule out other conditions that might be causing your symptoms.</p>
+
+                        <p>Men are sometimes offered a painless swab test to check for other conditions. </p>
+
+                        <p>This is where a cotton bud is wiped on the tip of the penis and sent for testing. It won't hurt but
+                            may feel uncomfortable.</p>
+
+                    </section>
+                    <section id="treatment">
+
+                        <h2>Treating UTIs</h2>
+
+                        <p>Your doctor or nurse may prescribe antibiotics to treat a UTI.</p>
+
+                        <p>Once you start treatment, the symptoms should start to clear up within 5 days in adults and 2 days
+                            in children.</p>
+
+                        <p>It's important to finish the whole course of antibiotics, even if you start to feel better.</p>
+
+                        <p>Some people with a severe UTI may be referred to hospital for treatment and tests. You may need to
+                            stay for a few days. Hospital treatment is more likely for men and children with a UTI.</p>
+
+                        <h3>Treating recurring UTIs</h3>
+
+                        <p>If your UTI comes back any time after treatment, you'll usually be prescribed a longer course of
+                            antibiotics.</p>
+
+                        <p>If you keep getting UTIs and regularly need treatment, your GP may give you a repeat prescription
+                            for antibiotics.</p>
+
+                    </section>
+                    <section id="things-you-can-try">
+
+                        <h2>Things you can do yourself</h2>
+
+                        <p>Mild UTIs often pass within a few days. To help ease pain while your symptoms clear up:</p>
+
+                        <ul>
+                            <li>take paracetamol – you can give children liquid paracetamol</li>
+                            <li>place a hot water bottle on your tummy, back or between your thighs</li>
+                            <li>rest and drink plenty of fluids – this helps your body to flush out the bacteria</li>
+                        </ul>
+
+                        <p>It may also help to avoid having sex until you feel better. You can't pass a UTI on to your partner
+                            but sex may be uncomfortable.</p>
+
+                        <div class="nhsuk-c-panel nhsuk-c-panel__warning">
+                            <h3 class="nhsuk-c-panel__header">Important</h3>
+                            <p>Avoid taking
+                                <a href="https://www.nhs.uk/conditions/nsaids/">NSAIDs</a> like ibuprofen or aspirin if you have a kidney infection. This may increase the
+                                risk of kidney problems.</p>
+
+                            <p>Speak to your doctor before you stop taking any prescribed medication.</p>
+
+                        </div>
+                    </section>
+                    <section id="causes">
+
+                        <h2>Causes of UTIs</h2>
+
+                        <p>UTIs are usually caused by bacteria from poo entering the urinary tract. The bacteria enter through
+                            the tube that carries pee out of the body (urethra).</p>
+
+                        <p>Women have a shorter urethra than men. This means bacteria are more likely to reach the bladder or
+                            kidneys and cause an infection.</p>
+
+                        <p>Causes of UTIs include:</p>
+
+                        <ul>
+                            <li>pregnancy</li>
+                            <li>conditions that block the urinary tract – such as
+                                <a href="https://www.nhs.uk/conditions/kidney-stones/">kidney stones</a>
+                            </li>
+                            <li>conditions that make it difficult to fully empty the bladder – such as an
+                                <a href="https://www.nhs.uk/conditions/prostate-enlargement/">enlarged prostate gland</a> in men and
+                                <a href="https://www.nhs.uk/conditions/constipation">constipation</a> in children</li>
+                            <li>
+                                <a href="https://www.nhs.uk/conditions/urinary-catheters/">urinary catheters</a> (a tube in your bladder used to drain urine)</li>
+                            <li>having a weakened immune system – for example, from
+                                <a href="https://www.nhs.uk/conditions/type-2-diabetes/">type 2 diabetes</a>, chemotherapy or HIV</li>
+                        </ul>
+                    </section>
+                    <section id="prevention">
+                        <h2>You can't always prevent UTIs</h2>
+
+                        <p>There are some things you can do to try to prevent a UTI.</p>
+                        <div class="nhsuk-c-panel nhsuk-c-panel-list-check">
+                            <h3 id="do" class="nhsuk-c-panel__header">Do</h3>
+                            <ul class="list--check">
+                                <li>wipe from front to back when you go to the toilet</li>
+                                <li>try to fully empty your bladder when you pee</li>
+                                <li>drink plenty of fluids</li>
+                                <li>take showers instead of baths</li>
+                                <li>wear loose cotton underwear</li>
+                                <li>pee as soon as possible after sex</li>
+                                <li>change your baby's or toddler's nappies regularly</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="nhsuk-c-panel nhsuk-c-panel-list-cross">
+                            <h3 id="dont" class="nhsuk-c-panel__header">Don't</h3>
+                            <ul class="list--cross">
+                                <li>use perfumed bubble bath, soap or talcum powder</li>
+                                <li>hold your pee in if you feel the urge to go</li>
+                                <li>wear tight, synthetic underwear, such as nylon </li>
+                                <li>wear tight jeans or trousers</li>
+                                <li>use
+                                    <a href="https://www.nhs.uk/conditions/contraception/male-condoms/">condoms</a> or
+                                    <a href="https://www.nhs.uk/conditions/contraception/contraceptive-diaphragm/">diaphragms</a> with spermicidal lube on them – try non-spermicidal lube or a different
+                                    type of
+                                    <a href="https://www.nhs.uk/conditions/contraception/contraception/">contraception</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <h3>Natural remedies</h3>
+
+                        <p>There is very little evidence that drinking cranberry juice or using probiotics reduces your chance
+                            of getting UTIs.</p>
+
+                    </section>
+                    <div class="nhsuk-c-review-date">
+                        <p class="nhsuk-body-s">
+                            Page last reviewed: 12/12/2017
+                            <br> Next review due: 12/12/2020
+                        </p>
+                    </div>
+
+                </div>              
+
             </div>
         </div>
 
