@@ -1,0 +1,82 @@
+body.resultsPage main .viewToggle {
+    margin: 0px 18px 20px 18px;
+}
+
+body.resultsPage main .nhsuk-page-content .results.fade-in {
+    //opacity: 0;
+    display: grid;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
+body.resultsPage main .nhsuk-page-content .results {
+    margin-bottom: 32px;
+}
+.nhsuk-page-content .nhsuk-o-grid .results {
+    list-style: none;
+    margin: 0;
+    padding: 0 16px;
+}
+
+.nhsuk-page-content .nhsuk-o-grid .results__item:first-child {
+    margin-top: 0;
+}
+
+body.resultsPage main .nhsuk-page-content .results li {
+    padding: 0;
+    border: none;
+    border-top: 2px solid #bac4c8;
+}
+
+body.resultsPage main .nhsuk-page-content .results li.last {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #bac4c8;
+}
+
+body.resultsPage main .nhsuk-page-content .results li.last h3 {
+    margin: 24px 0 0;
+}
+
+.nhsuk-page-content .nhsuk-o-grid .results__details {
+    padding: 0 32px 32px 32px;
+    position: relative;
+}
+
+body.resultsPage main .nhsuk-page-content .results li .results__details>div {
+    // max-width: calc( 100% * 1/2);
+    // min-width: calc( 100% * 1/2);
+    width: 100%;
+    float: left;
+}
+
+body.resultsPage main .nhsuk-page-content .results li .results__details>div>p:first-of-type {
+    font-size: 16px;
+    line-height: 16px;
+    color: #425462;
+}
+
+.nhsuk-page-content .nhsuk-o-grid .results__item p {
+    padding: 0;
+}
+
+.nhsuk-page-content .nhsuk-o-grid .results__name {
+    margin-top: 8px;
+}
+
+body.resultsPage main .nhsuk-page-content .results li .results__details {
+    padding: 0;
+    clear: both;
+    float: left;
+    width: 100%;
+    width: 100%;
+}
+
+.nhsuk-page-content .nhsuk-o-grid .results__item p {
+    padding: 0;
+}
+
+.nhsuk-page-content .nhsuk-o-grid .results__item__link {
+    margin-top: 8px;
+}
+
+body.resultsPage main .nhsuk-page-content .searchAgain {
+    margin: 0 16px 32px;
+}
