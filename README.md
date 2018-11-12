@@ -1,6 +1,6 @@
 # Urgent Care Signposting Prototypes
 
-<a href="#">Prototypes of the three possible solutions to improving urgent care signposting</a>, conceived as a part of a Magnum CI design sprint.
+<a href="https://nhsuk-urgent-care-prototypes-main.azurewebsites.net/">Prototypes of the three possible solutions to improving urgent care signposting</a>, conceived as a part of a Magnum CI design sprint.
 
 Created using <a href="https://github.com/nhsuk/frontend">NHS.UK prototyping kit</a>.
 
@@ -18,7 +18,7 @@ Follow our [contributing guide](https://github.com/nhsuk/frontend/blob/master/.g
 
 ## Deploying
 
- Following a successful pull request and merge, the code will automatically be deployed to our <a href="#">prototyping website</a>.
+ Following a successful pull request and merge, the code will automatically be deployed to our <a href="https://nhsuk-urgent-care-prototypes-main.azurewebsites.net/">prototyping website</a>.
 
 
 ## Licence
