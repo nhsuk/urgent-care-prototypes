@@ -1,3 +1,15 @@
+.sr-only,
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
 body.resultsPage main .viewToggle {
     margin: 0px 18px 20px 18px;
 }
@@ -79,4 +91,121 @@ body.resultsPage main .nhsuk-page-content .results li .results__details {
 
 body.resultsPage main .nhsuk-page-content .searchAgain {
     margin: 0 16px 32px;
+    a {
+      margin-left:32px;
+      position: relative;
+      &:before {
+        content: "\2190";
+        position: absolute;
+        left:-32px;
+      }
+    }
+}
+
+body.resultsPage main .nhsuk-page-content .results li .results__details>div {
+  max-width: calc( 100% * 1/2);
+  min-width: calc( 100% * 1/2);
+  width: 100%;
+  float: left;
+}
+
+body.resultsPage main .nhsuk-page-content .results li .results__details>section {
+  max-width: calc( 100% * 1/2);
+  min-width: calc( 100% * 1/2);
+  width: 100%;
+  float: right;
+  p {
+  
+  }
+}
+
+
+body.resultsPage main .nhsuk-page-content .results li .results__details .callout--info {
+  background-color: #fff;
+  border-left: 0;
+  border-top: 2px solid #669ed4;
+  margin-top: 10px;
+  float: right;
+  margin-top: 20px;
+  //  padding: 16px 24px; // this is when opening times exist
+  padding: 0 16px 24px;
+  .callout--info__mesg.open24 {
+    margin-right: 50px;
+    &:before {
+      content:"";
+      display: inline-block;
+      color: white;
+      background: green;
+      border-radius: 18px;
+      height: 36px;
+      width: 36px;
+      max-height: 36px;
+      max-width: 36px;
+      text-align: center;
+      position: relative;
+      right: 10px;
+      top: 10px;
+      font-size: 36px;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-3);
+    }
+  }
+}
+
+body.resultsPage main .nhsuk-page-content .results li .results__details .callout--info .openingTimes-panel {
+  position: relative;
+  margin-top: 20px;
+  .openingTimes-panel__toggle {
+    margin-left: 50px;
+    &:before {
+      content:"\203A";
+      display: inline-block;
+      color: white;
+      background: #005eb8;
+      border-radius: 18px;
+      height: 36px;
+      width: 36px;
+      max-height: 36px;
+      max-width: 36px;
+      text-align: center;
+      position: absolute;
+      left:0;
+      font-size: 36px;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-3);
+    }
+  }
+  .openingTimes-panel__content {
+    display: none;
+  }
+  &.open {
+    .openingTimes-panel__toggle {
+      &:before {
+        content:"\203A";
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+      }
+    }
+    .openingTimes-panel__content {
+      display: block;
+    }
+  }
+}
+
+body.resultsPage main .nhsuk-page-content .nhsuk-c-care-card.nhsuk-c-care-card--grey.nhsuk-c-care-card--dark-grey {
+  .nhsuk-c-care-card__heading {
+    background: #678598;
+    &:after{
+      border-top: 16px solid #678598;
+    }
+  }
 }
