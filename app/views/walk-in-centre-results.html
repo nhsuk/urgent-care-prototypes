@@ -1,0 +1,138 @@
+{% set title = 'Walk In Centre' %} {% set body_class = 'resultsPage' %} {% from 'components/breadcrumbs/macro.njk' import
+breadcrumbs %} {% extends 'includes/site-layout.html' %} {% block body %} {% block breadcrumb %} {{ breadcrumbs('#', 'Home',
+'#', 'Services near you') }} {% endblock %}
+<main id="main-content" class="nhsuk-home-page">
+    <div class="nhsuk-o-width-container">
+        <div class="nhsuk-o-main-wrapper">
+            <div class="nhsuk-o-grid">
+                <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+                    <div class="nhsuk-page-heading">
+                        <h1>Walk In Centres near EC1V</h1>
+                    </div>
+                </div>
+                <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+                    <div class="nhsuk-reading-width">
+                        <div class="nhsuk-page-content">
+                            <div class="nhsuk-o-grid">
+                                <ol class="results fade-in">
+                                    <li class="results__item">
+                                        <div class="results__details">
+                                            <div>
+                                                <p class="distance">
+                                                    <span class="sr-only">St Bartholomew's Hospital is </span>0.7 miles away</p>
+                                                <h2 class="results__name">St Bartholomew's Hospital</h2>
+                                                <p>
+                                                    West Smithfield , London, EC1A 7BE
+                                                    <br> 020 3416 5000
+                                                </p>
+                                                <p class="results__item__link">
+                                                    <a class="maplink" href="https://www.google.com/maps/dir/EC1V,+London/St+Bartholomew's+Hospital,+W+Smithfield,+London+EC1A+7BE/@51.5211901,-0.1084922,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x48761b434cea1eed:0x650ff38d435ea7fd!2m2!1d-0.0954415!2d51.526797!1m5!1m1!1s0x48761b537f68cf8d:0xf7fe23dd6e44f11a!2m2!1d-0.1003979!2d51.517669">Map and directions
+                                                        <span class="sr-only"></span>
+                                                    </a>
+                                                </p>
+                                                <p class="results__item__link">
+                                                    <a class="serviceslink" href="https://www.nhs.uk/Services/hospitals/Services/Service/DefaultView.aspx?id=288311">Services available
+                                                        <span class="sr-only"></span>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            {% include "opening-times-24.html" %}
+                                        </div>
+                                        <!--[if IE]><div style="clear: both;" class="clear-both"></div><![endif]-->
+                                    </li>
+                                    <li class="results__item">
+                                        <div class="results__details">
+                                            <div>
+                                                <p class="distance">
+                                                    <span class="sr-only">Ritchie Street Group Practice is </span>0.8 miles away</p>
+                                                <h2 class="results__name">Ritchie Street Group Practice</h2>
+                                                <p>
+                                                    34 Ritchie Street, London, Greater London, N1 0DG
+                                                    <br> 02078371663
+                                                </p>
+                                                <p class="results__item__link">
+                                                    <a class="maplink" href="https://www.google.com/maps/dir/EC1V,+London/Ritchie+Street+Group+Practice,+Ritchie+St,+London+N1+0DG/@51.5307347,-0.1177093,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x48761b434cea1eed:0x650ff38d435ea7fd!2m2!1d-0.0954415!2d51.526797!1m5!1m1!1s0x48761b428d60f5dd:0x7e95870456bf73da!2m2!1d-0.107754!2d51.5347674">Map and directions
+                                                        <span class="sr-only"></span>
+                                                    </a>
+                                                </p>
+                                                <p class="results__item__link">
+                                                    <a class="serviceslink" href="https://www.nhs.uk/Services/GP/PctServices/Service/DefaultView.aspx?id=89317">Services available
+                                                        <span class="sr-only"></span>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            {% include "opening-times-24.html" %}
+                                        </div>
+                                        <!--[if IE]><div style="clear: both;" class="clear-both"></div><![endif]-->
+                                    </li>
+                                    <li class="results__item last">
+                                        <div class="results__details">
+                                            <div>
+                                                <p class="distance">
+                                                    <span class="sr-only">University College Hospital is </span>1.8 miles away</p>
+                                                <h2 class="results__name">University College Hospital</h2>
+                                                <p>
+                                                    University College Hospital, 235 Euston Road, London, NW1 2BU
+                                                    <br> 020 3456 7890
+                                                </p>
+                                                <p class="results__item__link">
+                                                    <a class="maplink" href="https://www.google.com/maps/dir/EC1V,+London/University+College+London+Hospital,+235+Euston+Rd,+Fitzrovia,+London+NW1+2BU/@51.5257842,-0.1327249,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x48761b434cea1eed:0x650ff38d435ea7fd!2m2!1d-0.0954415!2d51.526797!1m5!1m1!1s0x48761b28a04a16fd:0xc66b4a8d980bcb8b!2m2!1d-0.1363551!2d51.5250834">Map and directions
+                                                        <span class="sr-only"></span>
+                                                    </a>
+                                                </p>
+                                                <p class="results__item__link">
+                                                    <a class="serviceslink" href="https://www.nhs.uk/Services/hospitals/Services/Service/DefaultView.aspx?id=288436">Services available
+                                                        <span class="sr-only"></span>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            {% include "opening-times-24.html" %}
+                                        </div>
+                                        <!--[if IE]><div style="clear: both;" class="clear-both"></div><![endif]-->
+                                    </li>
+                                </ol>
+                            </div>
+                            <div role="note" class="nhsuk-c-inset-text">
+                                <span class="visually-hidden">Information: </span>
+                                <h3>Not sure if Walk In Centre is what you need?</h3>
+                                <p>Go to
+                                    <a href="https://111.nhs.uk/">111.nhs.uk</a> or
+                                    <a href="tel: 111">call 111</a> to find out the right place to get help.</p>
+                            </div>
+                            <!-- <div class="nhsuk-c-care-card nhsuk-c-care-card--grey nhsuk-c-care-card--dark-grey">
+                              <div class="nhsuk-c-care-card__heading">
+                                <h3>Not sure if Walk In Centre is what you need?</h3>
+                              </div>
+                              <div class="nhsuk-c-care-card__content">
+                                <ul>
+                                  <li>Go to <a href="https://111.nhs.uk/">111.nhs.uk</a></li>
+                                  <li>or <a href="tel: 111">call 111</a> </li>
+                                </ul>
+                                <p>to find out the right place to get help.</p>
+                              </div>
+                            </div>
+                            <div> -->
+                            <p class="searchAgain">
+                                <a href="/walk-in-finder">Search again</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</main>
+<script>
+    var head = document.getElementsByTagName("head")[0],
+        cssLink = document.createElement("link");
+
+    cssLink.href = "/assets/css/urgent-care-results.min.css";
+    cssLink.id = "dynamic-css";
+    cssLink.media = "screen";
+    cssLink.type = "text/css";
+    cssLink.rel = "stylesheet";
+
+    head.appendChild(cssLink);
+</script> {% endblock %}
