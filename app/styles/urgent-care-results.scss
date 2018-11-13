@@ -130,10 +130,9 @@ body.resultsPage main .nhsuk-page-content .results li .results__details .callout
   //  padding: 16px 24px; // this is when opening times exist
   padding: 0 16px 24px;
   .callout--info__mesg.open24 {
-    margin-right: 50px;
     &:before {
       content:"";
-      display: inline-block;
+      display: none;
       color: white;
       background: green;
       border-radius: 18px;
