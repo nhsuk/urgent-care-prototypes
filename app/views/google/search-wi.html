@@ -8,45 +8,44 @@
                 margin: 50px auto 0 auto;
             }
     
-            div {
+            form {
                 width: 90%;
                 margin: 30px auto 0 auto;
                 position: relative;
             }
             
-                input{
-                    width: 100%;
-                    height: 42px;
-                    display: block;
-                    padding: 12px 50px 12px 12px;
-                    border:#d9d9d9 1px solid;
-                    border-radius: 5px;
-                    font-size: 16px;
-                    font-family: Helvetica, Arial, sans-serif;
-                }
-                .button{
-                    width: 45px;
-                    height: 42px;
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    background: url(/assets/images/google-search/google-search-button.png) top right no-repeat;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    z-index: 999;
-                    border-top-right-radius: 5px;
-                    border-bottom-right-radius: 5px;
-                }
-    
+            .search-input{
+                width: 100%;
+                height: 42px;
+                display: block;
+                padding: 12px 50px 12px 12px;
+                border:#d9d9d9 1px solid;
+                border-radius: 5px;
+                font-size: 16px;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            .button{
+                width: 45px;
+                height: 42px;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: url(/assets/images/google-search/google-search-button.png) top right no-repeat;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 999;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
         </style>
     </head>
     <body>
         <img class="logo" src="/assets/images/google-search/google.png">
-        <div>
-            <input type="text">
-            <a href="/google/results-wi"><img class="button" src="/assets/images/google-search/google-search-button.png"></a>
-        </div>
+        <form action="/google/results-wi">
+            <input type="text" class="search-input">
+            <input type="image" src="/assets/images/google-search/google-search-button.png" class="button" />
+        </form>
     </body>
 </html>
