@@ -1,8 +1,22 @@
 <html>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+      <style>
+      .result.mobile{
+        display: none;
+      }
+      
+      @media only screen and (max-device-width: 800px){
+        .result{
+          display: none;
+        }
+        .result.mobile{
+          display: block;
+        }
+      }
+      </style>
+      </head>
     <body>
-      <a href="/ae-finder"><img src="/assets/images/google-search/google-results-ae.png" style="width: 100%; display: block;"></a>
+      <a href="/walk-in-finder"><img src="/assets/images/google-search/google-results-wi.png" class="result" style="width: 100%"><img src="/assets/images/google-search/wi-results-mobile.png" class="result mobile" style="width: 100%"></a>
     </body>
 </html> 
