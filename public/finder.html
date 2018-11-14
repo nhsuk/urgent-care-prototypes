@@ -1,6 +1,5 @@
 {% from 'components/breadcrumb/macro.njk' import breadcrumb %}
 {% extends 'layout.html' %}
-{% set title = "Find a UTC - NHS" %}
 
 {% block content %}
   {{ breadcrumb({
@@ -19,7 +18,7 @@
       <div class="nhsuk-o-grid">
         <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
           <div class="nhsuk-page-heading">
-            <h1>Find a urgent treatment centre</h1>
+            <h1>{{ heading }}</h1>
           </div>
         </div>
         <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
@@ -27,7 +26,7 @@
             <div class="nhsuk-page-content">
               <div class="nhsuk-app__search">
                 <div class="search-container">
-                  <form method="get" class="form" action="/urgent-care-results">
+                  <form method="get" class="form" action="{{ actionLink }}">
                     <div>
                       <div class="form-group ">
                         <label class="nhsuk-heading-m" for="location">Enter a town, city or postcode in England</label>
