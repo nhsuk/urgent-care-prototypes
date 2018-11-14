@@ -2,8 +2,11 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const nunjucks = require('nunjucks');
+const routing = require('./routing');
 
-app.use('/assets', express.static(path.join(__dirname, '/node_modules')));
+app.set('view engine', 'html');
+app.set('port', process.env.PORT || 8081);
+app.use('/assets', express.static(path.join(__dirname, '/public/assets')));
 app.use('/nhsuk-frontend', express.static(path.join(__dirname, '/node_modules/nhsuk-frontend/packages')));
 
 var appViews = [
@@ -18,8 +21,10 @@ nunjucks.configure(appViews, {
     watch: true
 })
 
-app.get('/', function(req, res) {
-    res.render('index.html');
-});
+app.get(/^([^.]+)$/, function (req, res, next) {
+  routing.matchRoutes(req, res, next)
+})
 
-app.listen(8081);
+app.listen(app.get('port'), function() {
+    console.log('Listening for changes at http://localhost:' + app.get('port'));
+});
