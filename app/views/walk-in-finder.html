@@ -1,7 +1,14 @@
-{% set title = 'Find your nearest walk-in centre' %} {% set heading = 'Find your nearest walk-in centre' %} {% set title
-= 'Urgent care finder' %} {% set result_heading = 'Find your nearest walk-in centre' %} {% from 'components/breadcrumbs/macro.njk'
-import breadcrumbs %} {% extends 'includes/site-layout.html' %} {% block body %} {% block breadcrumb %} {{ breadcrumbs('#',
-'Home', '#', 'Services near you') }} {% endblock %}
+{% set title = 'Find your nearest walk-in centre' %}
+{% set heading = 'Find your nearest walk-in centre' %}
+{% set title = 'Urgent care finder' %}
+{% set result_heading = 'Find your nearest walk-in centre' %}
+{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% extends 'includes/site-layout.html' %}
+
+{% block body %}
+{% block breadcrumb %}
+    {{ breadcrumbs('/index', 'Home', '/index', 'Services near you') }}
+{% endblock %}
 <div class="nhsuk-o-width-container">
     <main id="main-content" class="nhsuk-o-width-wrapper util-nofocus">
         <div class="nhsuk-o-main-wrapper">
