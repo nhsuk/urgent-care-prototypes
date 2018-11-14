@@ -10,7 +10,7 @@ lib-cov
 
 pids
 logs
-results
+#results
 tmp
 coverage
 
@@ -35,3 +35,6 @@ tests/backstop/html_report/*
 
 # Compiled files
 dist/
+
+# Vim
+*~
