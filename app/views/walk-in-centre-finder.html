@@ -1,0 +1,18 @@
+{% set title = 'Find your nearest walk-in centre' %}
+{% set heading = 'Find your nearest walk-in centre' %}
+{% set results_partial = '/walk-in-centre-results' %}
+{% extends 'urgent-care-finder.html' %}
+
+{% block inset %}
+<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+    <div>
+      <p>Walk-in centres can help if you need urgent medical help but it's not an emergency.</p>
+    </div>
+    <div role="note" class="nhsuk-c-inset-text">
+      <span class="visually-hidden">Information: </span>
+      <b>
+        Not sure if a walk-in centre is what you need? Go to <a href="https://111.nhs.uk/">111.nhs.uk</a> or <a href="tel: 111">call 111</a> to find out the right place to go.
+      </b>
+    </div>
+</div>
+{% endblock %}
