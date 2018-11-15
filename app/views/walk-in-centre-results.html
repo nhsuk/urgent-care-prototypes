@@ -1,11 +1,11 @@
-{% set title = 'Walk In Centre' %}
+{% set title = 'Walk-in centre results' %}
 {% set body_class = 'resultsPage' %}
 {% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
 {% block breadcrumb %}
-    {{ breadcrumbs('/index', 'Home', '/walk-in-finder', 'Find a walk-in centre') }}
+  {{ breadcrumbs('/index', 'Home', '/walk-in-centre-finder', 'Find a walk-in centre') }}
 {% endblock %}
 <main id="main-content" class="nhsuk-home-page">
     <div class="nhsuk-o-width-container">
@@ -119,7 +119,7 @@
                             </div>
                             <div> -->
                             <p class="searchAgain">
-                                <a href="/walk-in-finder">Search again</a>
+                                <a href="/walk-in-centre-finder">Search again</a>
                             </p>
                         </div>
                     </div>

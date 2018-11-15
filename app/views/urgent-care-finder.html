@@ -1,5 +1,4 @@
 {% set title = 'Urgent care finder' %}
-{% set result_heading = 'Find your nearest walk-in centre' %}
 {% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
 {% extends 'includes/site-layout.html' %}
 
@@ -23,7 +22,7 @@
                         <div class="nhsuk-page-content">
                             <div class="nhsuk-app__search">
                                 <div class="search-container">
-                                    <form method="get" class="form" action="/urgent-care-results">
+                                    <form method="get" class="form" action="{{ results_partial }}">
                                         <div>
                                             <div class="form-group ">
                                                 <label for="location">Enter a town, city or postcode in England</label>
