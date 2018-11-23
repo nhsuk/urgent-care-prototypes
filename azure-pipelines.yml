@@ -1,25 +1,12 @@
-# Node.js
-# Build a general Node.js project with npm.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
-resources:
-- repo: self
 queue:
   name: Hosted Ubuntu 1604
-  demands: 
-  - npm
-  - node.js
+  demands: npm
 
 steps:
 - task: Npm@1
   displayName: 'npm install'
   inputs:
-    verbose: false
-
-
-- task: Gulp@0
-  displayName: 'Run gulp task'
+    verbose: true
 
 
 - task: ArchiveFiles@2
