@@ -24,7 +24,7 @@
     -webkit-appearance: none;
         -moz-appearance: none;
             appearance: none;
-    background-color: $colour;
+    background-color: $color;
     border: 0;
     box-shadow: 0 2px 0 darken($colour, 15%);
     cursor: pointer;
@@ -57,7 +57,7 @@
     }
 
     &:visited {
-        background-color: $colour;
+        background-color: $color;
     }
 
     &:focus {
@@ -70,7 +70,7 @@
     }
 
     &:active {
-        box-shadow: 0 0 0 $colour;
+        box-shadow: 0 0 0 $color;
         top: 2px;
     }
 
@@ -81,7 +81,7 @@
         opacity: .5;
 
         &:hover {
-        background-color: $colour;
+        background-color: $color;
         cursor: default;
         }
 

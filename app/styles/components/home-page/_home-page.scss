@@ -6,7 +6,7 @@
 
 .nhsuk-hero-image {
   &.rotate {
-    background-color: $nhsuk-blue;
+    background-color: $color_nhsuk-blue;
     background-image: none;
     background-position: center right;
     background-repeat: no-repeat;
@@ -20,15 +20,15 @@
     }
 
     .nhsuk-hero-image__wrapper {
-      background: rgba($nhsuk-blue-shade-50, .1);
+      background: rgba($color_shade_nhsuk-blue-50, .1);
       height: 100%;
     }
 
     .nhsuk-hero__home-content {
       @include top-and-bottom();
-      background: $nhsuk-blue;
+      background: $color_nhsuk-blue;
       bottom: -48px;
-      color: $nhsuk-white;
+      color: $color_nhsuk-white;
       max-width: 565px;
       padding: 32px 40px 40px;
       position: absolute;
@@ -37,7 +37,7 @@
       &:after {
         border-left: 16px solid transparent;
         border-right: 16px solid transparent;
-        border-top: 16px solid $nhsuk-blue;
+        border-top: 16px solid $color_nhsuk-blue;
         bottom: -15px;
         content: '';
         display: block;
@@ -62,7 +62,7 @@
       }
 
       p {
-        color: rgba($nhsuk-white, .9);
+        color: rgba($color_nhsuk-white, .9);
         font-size: 24px;
         line-height: 36px;
         margin-top: 8px;
@@ -119,8 +119,8 @@
     width: 100%;
 
     a {
-      background: $nhsuk-blue;
-      color: $nhsuk-white;
+      background: $color_nhsuk-blue;
+      color: $color_nhsuk-white;
       display: inline-block;
       padding: 12px 24px;
       position: relative;
@@ -132,21 +132,21 @@
       }
 
       &:hover {
-        background: $nhsuk-blue-shade-35;
+        background: $color_shade_nhsuk-blue-35;
         box-shadow: none;
         text-decoration: underline;
       }
 
       &:active {
-        background: $nhsuk-blue-shade-50;
+        background: $color_shade_nhsuk-blue-50;
       }
 
       &:focus {
-        box-shadow: inset 0 0 0 4px $nhsuk-focus-colour;
+        box-shadow: inset 0 0 0 4px $nhsuk-focus-color;
       }
 
       .nhsuk-icon {
-        fill: $nhsuk-white;
+        fill: $color_nhsuk-white;
         height: 24px;
         position: absolute;
         right: 12px;
@@ -180,14 +180,14 @@
   padding: 0;
 
   li {
-    @include clear();
+    @include clearfix();
     display: inline-block;
     list-style: none;
     margin: 0;
     width: 100%;
 
     @include mq($until: desktop) {
-      border-bottom: 1px solid $nhsuk-grey-4;
+      border-bottom: 1px solid $color_nhsuk-grey-4;
 
       &:last-child {
         border: 0;
@@ -212,26 +212,26 @@
 
       &:focus {
         .nhsuk-list-apps__title {
-          background: $nhsuk-link-focus-background-colour;
-          box-shadow: 0 0 0 4px $nhsuk-link-focus-background-colour;
-          color: $nhsuk-link-focus-colour;
+          background: $nhsuk-link-focus-background-color;
+          box-shadow: 0 0 0 4px $nhsuk-link-focus-background-color;
+          color: $nhsuk-link-focus-color;
         }
       }
 
       &:hover {
         .nhsuk-list-apps__title {
-          background: $nhsuk-link-hover-background-colour;
-          box-shadow: 0 0 0 4px $nhsuk-link-hover-background-colour;
-          color: $nhsuk-link-hover-colour;
+          background: $nhsuk-link-hover-background-color;
+          box-shadow: 0 0 0 4px $nhsuk-link-hover-background-color;
+          color: $nhsuk-link-hover-color;
           text-decoration: none;
         }
       }
 
       &:active {
         .nhsuk-list-apps__title {
-          background: $nhsuk-link-active-background-colour;
-          box-shadow: 0 0 0 4px $nhsuk-link-active-background-colour;
-          color: $nhsuk-link-active-colour;
+          background: $nhsuk-link-active-background-color;
+          box-shadow: 0 0 0 4px $nhsuk-link-active-background-color;
+          color: $nhsuk-link-active-color;
         }
       }
 
@@ -246,7 +246,7 @@
       }
 
       .nhsuk-list-apps__icon {
-        border: 1px solid $nhsuk-grey-5;
+        border: 1px solid $color_nhsuk-grey-5;
         border-radius: 12px;
         height: 72px;
         left: 0;
@@ -281,7 +281,7 @@
         }
       }
       .nhsuk-list-apps__category {
-        color: $nhsuk-secondary-text-colour;
+        color: $nhsuk-secondary-text-color;
         display: block;
         font-size: 16px;
         font-weight: 400;
@@ -306,26 +306,26 @@
   }
 }
 
-.nhsuk-tab-heading {
-  font-size: govuk-em(16px, $nhsuk-base-font-size-mobile);
-  line-height: 24px;
-  margin: 32px 0 0;
-
-  @include mq($from: tablet) {
-    font-size: govuk-em(19px, $nhsuk-base-font-size);
-    line-height: 24px;
-    margin: 40px 0 0;
-  }
-
-  & + .nhsuk-list-apps {
-    margin-top: 16px !important;
-
-    @include mq($until: tablet) {
-      margin-top: 8px !important;
-    }
-
-  }
-}
+//.nhsuk-tab-heading {
+//  font-size: govuk-em(16px, $nhsuk-base-font-size-mobile);
+//  line-height: 24px;
+//  margin: 32px 0 0;
+//
+//  @include mq($from: tablet) {
+//    font-size: govuk-em(19px, $nhsuk-base-font-size);
+//    line-height: 24px;
+//    margin: 40px 0 0;
+//  }
+//
+//  & + .nhsuk-list-apps {
+//    margin-top: 16px !important;
+//
+//    @include mq($until: tablet) {
+//      margin-top: 8px !important;
+//    }
+//
+//  }
+//}
 
 //////////////////////
 // Page Sections
@@ -335,7 +335,7 @@
   display: block;
 
   &--white {
-    background: $nhsuk-white;
+    background: $color_nhsuk-white;
   }
 
   .nhsuk-section__content {
@@ -465,7 +465,7 @@
 
 .nhsuk-section__description {
   @include reading-width();
-  color: $nhsuk-secondary-text-colour;
+  color: $nhsuk-secondary-text-color;
   margin-top: 16px;
   max-width: 660px;
 
@@ -494,14 +494,14 @@
   width: 100%;
 
   a {
-    background: $nhsuk-white;
-    box-shadow: 0 4px 0 0 $nhsuk-grey-4;
+    background: $color_nhsuk-white;
+    box-shadow: 0 4px 0 0 $color_nhsuk-grey-4;
     display: block;
     height: 100%;
     text-decoration: none;
 
     &:focus {
-      box-shadow: 0 0 0 4px $nhsuk-focus-colour;
+      box-shadow: 0 0 0 4px $nhsuk-focus-color;
 
       .nhsuk-c-promo__heading {
         text-decoration: underline;
@@ -510,14 +510,14 @@
     }
 
     &:hover {
-      background: $nhsuk-white;
-      box-shadow: 0 0 0 4px $nhsuk-focus-colour;
-      color: $nhsuk-blue;
+      background: $color_nhsuk-white;
+      box-shadow: 0 0 0 4px $nhsuk-focus-color;
+      color: $color_nhsuk-blue;
     }
 
     &:active {
-      background: darken($nhsuk-grey-5, 2%) !important;
-      box-shadow: 0 0 0 4px $nhsuk-link-active-background-colour !important;
+      background: darken($color_nhsuk-grey-5, 2%) !important;
+      box-shadow: 0 0 0 4px $nhsuk-link-hover-background-color !important;
     }
 
     &:hover,
@@ -547,7 +547,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 1px solid $nhsuk-grey-5;
+    border-bottom: 1px solid $color_nhsuk-grey-5;
     bottom: 0;
     display: block;
     left: 0;
@@ -568,7 +568,7 @@
   }
 
   .nhsuk-c-promo__description {
-    color: $nhsuk-secondary-text-colour;
+    color: $nhsuk-secondary-text-color;
     margin-top: 12px;
     text-decoration: none !important;
   }
@@ -600,11 +600,11 @@
 
 .nhsuk-section--white {
   .nhsuk-c-promo__image {
-    border: 1px solid $nhsuk-grey-5;
+    border: 1px solid $color_nhsuk-grey-5;
   }
   .nhsuk-c-promo {
     a {
-      background: $nhsuk-grey-5;
+      background: $color_nhsuk-grey-5;
     }
   }
 }
@@ -641,7 +641,7 @@
 
 .nhsuk-c-panel--grey {
   @include top-and-bottom();
-  background: $nhsuk-grey-5;
+  background: $color_nhsuk-grey-5;
   padding: 32px;
 
   @include mq($until: tablet) {
@@ -652,12 +652,12 @@
 
 .nhsuk-section {
   .nhsuk-c-panel--grey {
-    background: $nhsuk-white;
+    background: $color_nhsuk-white;
   }
 
   &--white {
     .nhsuk-c-panel--grey {
-      background: $nhsuk-grey-5;
+      background: $color_nhsuk-grey-5;
     }
   }
 
@@ -712,7 +712,7 @@
 .ie9 {
 
   .nhsuk-c-promo__group {
-    @include clear();
+    @include clearfix();
 
     .nhsuk-c-promo {
       display: inline-block;
@@ -731,7 +731,7 @@
 .lte-ie8 {
   .nhsuk-hero-image {
     &.rotate {
-      background: $nhsuk-blue;
+      background: $color_nhsuk-blue;
       background-image: none !important;
       height: auto !important;
 

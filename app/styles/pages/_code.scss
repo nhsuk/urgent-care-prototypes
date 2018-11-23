@@ -1,6 +1,6 @@
 .example {
-  background: $nhsuk-white;
-  border: 1px solid $nhsuk-border-colour;
+  background: $color_nhsuk-white;
+  border: 1px solid $nhsuk-border-color;
   margin: 40px 0 0;
   overflow: hidden;
   padding: 64px 16px 16px;
@@ -10,7 +10,7 @@
   }
   &:before {
     background: $nhsuk-grey-1;
-    color: $nhsuk-white;
+    color: $color_nhsuk-white;
     content: 'EXAMPLE';
     font-size: 12px;
     font-weight: 600;
@@ -50,10 +50,10 @@
     padding-left: 16px;
   }
   &.research {
-    border: 1px solid $nhsuk-blue;
+    border: 1px solid $color_nhsuk-blue;
     &:before {
-      background: $nhsuk-blue;
-      color: $nhsuk-white;
+      background: $color_nhsuk-blue;
+      color: $color_nhsuk-white;
       content: 'USER RESEARCH';
   }
 }
@@ -67,7 +67,7 @@
   .nhsuk-btn-copy {
     background-color: $nhsuk-green;
     border: 0;
-    color: $nhsuk-white;
+    color: $color_nhsuk-white;
     font-size: 14px;
     padding: 5px 10px;
     position: absolute;
@@ -78,7 +78,7 @@
 }
 
 .nhsuk-tag {
-  color: $nhsuk-white;
+  color: $color_nhsuk-white;
   font-size: 14px;
   overflow-x: auto;
   padding: 5px 10px;
@@ -90,7 +90,7 @@
     background-color: $nhsuk-grey-1;
   }
   &__design {
-    background-color: $nhsuk-blue;
+    background-color: $color_nhsuk-blue;
   }
   &__development {
     background-color: $nhsuk-purple;
@@ -224,7 +224,7 @@ pre[class*=language-] {
 
 .version-wrapper {
   @include top-and-bottom();
-  border: 1px solid $nhsuk-border-colour;
+  border: 1px solid $nhsuk-border-color;
   padding: 32px;
   margin: 56px 0;
 }
@@ -241,7 +241,7 @@ pre[class*=language-] {
 
 code,
 .example-code-snippet {
-  background-color: $nhsuk-white;
-  color: $nhsuk-blue;
+  background-color: $color_nhsuk-white;
+  color: $color_nhsuk-blue;
   padding: 0 5px;
 }

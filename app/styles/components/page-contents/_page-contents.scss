@@ -1,6 +1,6 @@
 .nhsuk-c-page-contents{
 	padding: 0 0 40px 0;
-	border-bottom:$nhsuk-grey-4 1px solid;
+	border-bottom:$color_nhsuk-grey-4 1px solid;
 	
 	&.v2{
 		padding: 40px 0;
@@ -100,7 +100,7 @@
 }
 
 h1 span.nhsuk-o-h1-sub{
-	color: $nhsuk-secondary-text-colour;
+	color: $nhsuk-secondary-text-color;
 	display: block;
 	font-weight: 400;
 	font-size: 0.85em;
@@ -109,7 +109,7 @@ h1 span.nhsuk-o-h1-sub{
 }
 
 h1 small{
-	color: $nhsuk-secondary-text-colour;
+	color: $nhsuk-secondary-text-color;
 	display: block;
 	font-weight: 400;
 	font-size: 32px;
