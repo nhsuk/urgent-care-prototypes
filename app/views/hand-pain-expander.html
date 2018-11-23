@@ -1,0 +1,38 @@
+{% set title = 'Hand pain 111' %} {% extends 'carecarder-hand-pain.html' %} {% block carecard %}
+<div class="nhsuk-c-care-card nhsuk-c-care-card--red">
+    <div class="nhsuk-c-care-card__heading">
+        <h3>Get advice from 111 if:</h3>
+    </div>
+    <div class="nhsuk-c-care-card__content">
+        <ul>
+            <li>you have extreme pain after an injury</li>
+            <li>your wrist or finger are a funny shape </li>
+            <li>there was a snap or grinding noise at the time of injury</li>
+            <li>you have difficulty moving the hand, wrist or fingers</li>
+        </ul>
+        <p> These are signs of a broken bone.</p>
+        <p> 111 can quickly tell you the right place to get help.</p>
+        <p> Go to
+            <a href="https://111.nhs.uk/">111.nhs.uk</a> or
+            <a href="tel: 111">call 111</a>.</p>
+      <br/>
+            <details class="nhsuk-details nhsuk-expander">
+                    <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-1" aria-expanded="false">
+                        <span class="nhsuk-details__summary-text">
+                            Other ways to get help
+                        </span>
+                    </summary>
+                    <div class="nhsuk-details__text" id="details-content-1" aria-hidden="true">
+                        <p>If you do not want to use 111, you can:</p>
+                        <ul>
+                            <li>ask your GP practice for an urgent appointment</li>
+                            <li>
+                                <a href="https://www.nhs.uk/service-search/Urgent-Treatment-Centre/LocationSearch/10022">Find an urgent treatment centre near you</a>
+                            </li>
+                        </ul>
+        
+                    </div>
+                </details>
+    </div>
+</div>
+{% endblock %}
