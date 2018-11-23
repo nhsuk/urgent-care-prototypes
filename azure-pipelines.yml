@@ -1,25 +1,12 @@
-# Node.js
-# Build a general Node.js project with npm.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
-resources:
-- repo: self
 queue:
   name: Hosted Ubuntu 1604
-  demands: 
-  - npm
-  - node.js
+  demands: npm
 
 steps:
 - task: Npm@1
   displayName: 'npm install'
   inputs:
-    verbose: false
-
-
-- task: Gulp@0
-  displayName: 'Run gulp task'
+    verbose: true
 
 
 - task: ArchiveFiles@2
@@ -32,3 +19,20 @@ steps:
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifacts: drop'
+
+
+- task: AzureRmWebAppDeployment@3
+  displayName: 'Azure App Service Deploy: rs-pipeline'
+  inputs:
+    azureSubscription: 'Architecture Playground (4371fb0e-3c13-40da-9b2d-37d09cc60a86)'
+
+    appType: applinux
+
+    WebAppName: 'rs-pipeline'
+
+    ImageSource: Builtin
+
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+
+    RuntimeStack: 'NODE|10.10'
+
