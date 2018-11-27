@@ -1,11 +1,11 @@
 {% set title = 'Walk-in centre results' %}
 {% set body_class = 'resultsPage' %}
-{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
 {% block breadcrumb %}
-  {{ breadcrumbs('/index', 'Home', '/walk-in-centre-finder', 'Find a walk-in centre') }}
+  {{ breadcrumb('/index', 'Home', '/walk-in-centre-finder', 'Find a walk-in centre') }}
 {% endblock %}
 <main id="main-content" class="nhsuk-home-page">
     <div class="nhsuk-o-width-container">

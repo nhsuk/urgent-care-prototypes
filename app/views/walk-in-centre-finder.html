@@ -1,18 +1,23 @@
 {% set title = 'Find your nearest walk-in centre' %}
 {% set heading = 'Find your nearest walk-in centre' %}
 {% set results_partial = '/walk-in-centre-results' %}
+{% from 'inset-text/macro.njk' import insetText %}
 {% extends 'urgent-care-finder.html' %}
 
 {% block inset %}
-<div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
-    <div>
-      <p>Walk-in centres can help if you need urgent medical help but it's not an emergency.</p>
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-three-quarters">
+
+        <p>Walk-in centres can help if you need urgent medical help but it's not an emergency.</p>
+
+        {{ insetText({
+          "HTML": "Not sure if a walk-in centre is what you need? Go to <a href='https://111.nhs.uk'>111.nhs.uk</a> or <a href='tel: 111'>call 111</a> to find out the right place to go."
+        }) }}
+
+      </div>
     </div>
-    <div role="note" class="nhsuk-c-inset-text">
-      <span class="visually-hidden">Information: </span>
-      <b>
-        Not sure if a walk-in centre is what you need? Go to <a href="https://111.nhs.uk/">111.nhs.uk</a> or <a href="tel: 111">call 111</a> to find out the right place to go.
-      </b>
-    </div>
+  </main>
 </div>
 {% endblock %}

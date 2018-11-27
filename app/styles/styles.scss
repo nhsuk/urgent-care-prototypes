@@ -21,5 +21,7 @@
 @import 'node_modules/nhsuk-frontend/packages/components/review-date/review-date';
 @import 'node_modules/nhsuk-frontend/packages/components/tables/tables';
 
-// App specific styles
-@import 'app';
+// app
+@import 'button';
+@import 'urgent-care-finder';
+@import 'urgent-care-results';

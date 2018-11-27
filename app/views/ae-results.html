@@ -1,12 +1,14 @@
 {% set title = 'A&E Services results' %}
 {% set body_class = 'resultsPage' %}
-{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
+{% from 'inset-text/macro.njk' import insetText %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
 {% block breadcrumb %}
-  {{ breadcrumbs('/index', 'Home', '/ae-finder', 'Find a A&E') }}
+  {{ breadcrumb('/index', 'Home', '/ae-finder', 'Find a A&E') }}
 {% endblock %}
+
 <main id="main-content" class="nhsuk-home-page">
     <div class="nhsuk-o-width-container">
         <div class="nhsuk-o-main-wrapper">

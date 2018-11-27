@@ -20,8 +20,8 @@
     "gulp-clean-css": "^3.10.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
+    "nhsuk-frontend": "^0.2.1",
     "node-sass": "^4.10.0",
-    "nhsuk-frontend": "^0.1.6",
     "nunjucks": "^3.1.4"
   },
   "devDependencies": {

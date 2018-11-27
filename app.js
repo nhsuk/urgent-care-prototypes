@@ -10,7 +10,7 @@ app.use('/assets', express.static(path.join(__dirname, 'app/assets')));
 app.use('/nhsuk-frontend', express.static(path.join(__dirname, '/node_modules/nhsuk-frontend')));
 
 var appViews = [
-  path.join(__dirname, '/node_modules/nhsuk-frontend'),
+  path.join(__dirname, '/node_modules/nhsuk-frontend/packages/components'),
   path.join(__dirname, '/app/views/')
 ]
 

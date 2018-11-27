@@ -1,5 +1,5 @@
-{% from 'components/header/macro.njk' import header %}
-{% from 'components/footer/macro.njk' import footer %}
+{% from 'header/macro.njk' import header %}
+{% from 'footer/macro.njk' import footer %}
 
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if IE 9]><html class="ie9" lang="en"><![endif]--><!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
@@ -10,93 +10,61 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!--[if IE]><link rel="shortcut icon" href="/nhsuk-frontend/core/assets/favicons/favicon.ico"><![endif]-->
+    <!--[if IE]><link rel="shortcut icon" href="/core/assets/favicons/favicon.ico"><![endif]-->
     <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
-    <link rel="apple-touch-icon" href="/nhsuk-frontend/core/assets/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/core/assets/favicons/apple-touch-icon.png">
     <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
-    <link rel="icon" href="/nhsuk-frontend/core/assets/favicons/favicon.png">
+    <link rel="icon" href="/core/assets/favicons/favicon.png">
 
-    <title>NHS.UK redesign - {{ title }}</title>
+    <title>NHS.UK - {{ title }}</title>
 
     <link rel="stylesheet" href="/assets/css/styles.min.css">
-    <link rel="stylesheet" href="/assets/css/urgent-care-finder.min.css">
-    <link rel="stylesheet" href="/assets/css/urgent-care-results.min.css">
-
-    <!--[if lte IE 9]>
-      <script src="/nhsuk-frontend/core/assets/libraries/jquery-1.12.4.min.js" type="text/javascript"></script>
-    <![endif]-->
-    <!--[if !IE]><!-->
-      <script src="/nhsuk-frontend/core/assets/libraries/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <!--<![endif]-->
   </head>
   <body class="{{ body_class }}">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     
     {% block banner %}{% endblock %}
 
-    {% if navigation == 'transactional' %}
-      {% include "includes/header-transactional.html" %}
-    {% else %}
-      {% include "includes/header.html" %}
-      {% include "includes/nav.html" %}
-    {% endif %}
-
-
+    {{ header({
+      "showNav": "false",
+      "showSearch": "false"
+    }) }}
 
     {% block body %}{% endblock %}
 
-    {% set primaryLinks = [
+    {{ footer({
+      "primaryLinks": [
         {
-          'url'  : 'https://www.nhs.uk/Pages/nhs-sites.aspx',
-          'label' : 'NHS sites'
+          "URL": "https://www.nhs.uk/Pages/nhs-sites.aspx",
+          "label": "NHS sites"
         },
         {
-          'url' : 'https://www.nhs.uk/about-us',
-          'label' : 'About us'        
+          "URL": "https://www.nhs.uk/about-us",
+          "label": "About us"
         },
         {
-          'url'  : 'https://www.nhs.uk/Pages/contact-us.aspx',
-          'label' : 'Contact us'    
+          "URL": "https://www.nhs.uk/contact-us/",
+          "label": "Contact us"
         },
         {
-          'url'  : 'https://www.nhs.uk/Personalisation/Login.aspx',
-          'label' : 'Profile editor login'    
+          "URL": "https://www.nhs.uk/Personalisation/Login.aspx",
+          "label": "Profile editor login"
+        }
+      ],
+      "secondaryLinks": [
+        {
+          "URL": "https://www.nhs.uk/about-us/sitemap/",
+          "label": "Sitemap"
+        },
+        {
+          'URL': 'https://www.nhs.uk/accessibility/',
+          'label': 'Accessibility'
+        },
+        {
+          "URL": "https://www.nhs.uk/our-policies/",
+          "label": "Our policies"
         }
       ]
-    %}
-
-    {% set secondaryLinks = [
-        {
-          'url'  : 'https://www.nhs.uk/choices/pages/sitemap.aspx',
-          'label' : 'Sitemap'
-        },
-        {
-          'url' : 'https://www.nhs.uk/accessibility/',
-          'label' : 'Accessibility'
-        },
-        {
-          'url'  : 'https://www.nhs.uk/our-policies/',
-          'label' : 'Our policies'
-        }
-      ]
-    %}
-
-    {{ footer(primaryLinks, secondaryLinks) }}
-
-    <script src="/nhsuk-frontend/nhsuk.js"></script>
-    <script src="/assets/js/prism.min.js"></script>
-    <script src="/assets/js/clipboard.min.js"></script>
-    
-    <script>
-    var clipboard = new ClipboardJS('.nhsuk-btn-copy');
-      clipboard.on('success', function(e) {
-        e.clearSelection();
-        e.trigger.textContent = 'Copied';
-        setTimeout(function() {
-          e.trigger.textContent = 'Copy';
-        }, 2500);
-      });
-    </script>
-
+    })}}
   </body>
 </html>

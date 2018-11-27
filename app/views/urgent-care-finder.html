@@ -1,10 +1,10 @@
 {% set title = 'Urgent care finder' %}
-{% from 'components/breadcrumbs/macro.njk' import breadcrumbs %}
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
 {% extends 'includes/site-layout.html' %}
 
 {% block body %}
 {% block breadcrumb %}
-    {{ breadcrumbs('/index', 'Home', '/index', 'Services near you') }}
+    {{ breadcrumb('/index', 'Home', '/index', 'Services near you') }}
 {% endblock %}
 <div class="nhsuk-o-width-container">
     <main id="main-content" class="nhsuk-o-width-wrapper util-nofocus">
