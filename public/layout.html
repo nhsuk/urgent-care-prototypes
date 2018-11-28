@@ -22,7 +22,7 @@
 
     <title>{{ title }} - NHS</title>
 
-    <link rel="stylesheet" href="/nhsuk-frontend/dist/nhsuk-0.1.6.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <!--[if !IE]><!-->
     <script src="/jquery/dist/jquery.min.js" type="text/javascript"></script>
@@ -97,20 +97,6 @@
     })}}
 
     <script src="/nhsuk-frontend/packages/nhsuk.min.js"></script>
-    <script src="/assets/js/prism.min.js"></script>
-    <script src="/assets/js/clipboard.min.js"></script>
-    
-    <script>
-        var clipboard = new ClipboardJS('.nhsuk-btn-copy');
-        clipboard.on('success', function(e) {
-            e.clearSelection();
-            e.trigger.textContent = 'Copied';
-            setTimeout(function() {
-            e.trigger.textContent = 'Copy';
-            }, 2500);
-        });
-    </script>
-
 </body>
 </html>
 

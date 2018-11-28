@@ -11,7 +11,7 @@ app.use('/nhsuk-frontend', express.static(path.join(__dirname, '/node_modules/nh
 app.use('/jquery', express.static(path.join(__dirname, '/node_modules/jquery/')));
 var appViews = [
     path.join(__dirname, '/node_modules/nhsuk-frontend/packages/'),
-    path.join(__dirname, '/public/')
+    path.join(__dirname, '/public')
   ]
 
 nunjucks.configure(appViews, {

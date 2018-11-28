@@ -7,26 +7,30 @@
     {
       href: "/index",
       text: "Home"
+    },
+    {
+      href: "/index",
+      text: "Services near you"
     }
   ],
-  href: "/index",
-  text: "Services near you"
+  href: "/results/ae-finder",
+  text: service
 })}}
-
-<main id="main-content" class="nhsuk-home-page">
-  <div class="nhsuk-o-width-container">
-    <div class="nhsuk-o-main-wrapper">
-      <div class="nhsuk-o-grid">
-        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+<div class="nhsuk-width-container">
+  <main id="maincontent" class="nhsuk-main-wrapper util-nofocus">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
           <div class="nhsuk-page-heading">
             <h1>{{ heading }}</h1>
           </div>
         </div>
-        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--full">
+       <div class="nhsuk-grid-column-full">
           <div class="nhsuk-reading-width">
-            <div class="nhsuk-page-content">
-              <div class="nhsuk-o-grid">
-                <ol class="results fade-in">
+            <div class="nhsuk-page-content">    
+              <div class="nhsuk-grid">
+              {% block inset %}
+              {% endblock %}     
+                <ol class="results">
                   <li class="results__item">
                     <div class="results__details">
                       <div>
@@ -108,7 +112,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</main>
+  </main>
+</div>
 {% endblock %}
