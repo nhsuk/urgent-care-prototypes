@@ -1,0 +1,24 @@
+{% extends "conditions/uti.html"%}
+{% from 'components/care-card/macro.njk' import careCard %}
+
+{% block redcard %}
+{{ careCard({
+    "type": "urgent",
+    "heading": "Ask for an urgent GP appointment if you have:",
+    "HTML": "
+    <ul>
+        <li>pain in your sides or lower back</li>
+            <li>a very high temperature or you feel hot and shivery </li>
+            <li>felt sick or been sick</li>
+            <li>
+                <a href='https://www.nhs.uk/conditions/diarrhoea-and-vomiting/'>diarrhoea</a>
+            </li>
+        </ul>
+        <p>It could be a kidney infection. This can be serious if not treated.</p>
+        <p>If you cannot see a GP, go to
+            <a href='https://111.nhs.uk/'>111.nhs.uk</a> or
+            <a href='tel: 111'>call 111</a> to find out the right place to get help.</p>
+    </ul>
+    "
+}) }}
+{% endblock %}

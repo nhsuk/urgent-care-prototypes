@@ -1,0 +1,55 @@
+{% extends "conditions/uti.html"%}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/details/macro.njk' import details %}
+
+{% block redcard %}
+{{ careCard({
+    "type": "urgent",
+    "heading": "Ask for an urgent GP appointment if you have:",
+    "HTML": "
+    <ul>
+        <li>pain in your sides or lower back</li>
+            <li>a very high temperature or you feel hot and shivery </li>
+            <li>felt sick or been sick</li>
+            <li>
+                <a href='https://www.nhs.uk/conditions/diarrhoea-and-vomiting/'>diarrhoea</a>
+            </li>
+    </ul>
+    <p>These symptoms suggest a kidney infection, which can be serious if it isn't treated.<p>
+    <details class='nhsuk-details nhsuk-expander'>
+        <summary class='nhsuk-details__summary' role='button' aria-controls='details-content-1' aria-expanded='false' style='padding: 0px;'>
+            <span class='nhsuk-details__summary-text'>
+                Opening times
+            </span>
+        </summary>
+        <div class='nhsuk-details__text' id='details-content-1' aria-hidden='true' style='padding-left: 0px;'>
+            <p>You can also:</p>
+            <ul>
+                <li> go to
+                    <a href='https://111.nhs.uk/'>111.nhs.uk</a> or
+                    <a href='tel: 111'>call 111</a> to find out the best place to get help near you
+                </li>
+                <li>
+                    <a href='https://www.nhs.uk/service-search/Urgent-Treatment-Centre/LocationSearch/10022'>find an urgent treatment centre near you</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+    "
+}) }}
+{% endblock %}
+{# 
+{{ details({
+  "classes": "nhsuk-expander",
+  "text": "Opening times",
+  "HTML": "
+    <p>You can also:</p>
+    <ul>
+        <li> go to
+            <a href='https://111.nhs.uk/'>111.nhs.uk</a> or
+            <a href='tel: 111'>call 111</a> to find out the best place to get help near you</li>
+        <li>
+            <a href='https://www.nhs.uk/service-search/Urgent-Treatment-Centre/LocationSearch/10022'>find an urgent treatment centre near you</a>
+        </li>
+    </ul>
+}) }} #}
