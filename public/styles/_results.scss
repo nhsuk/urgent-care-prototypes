@@ -28,10 +28,8 @@
     margin: 24px 0 0;
   }
 }
-.results__item{
-  :first-child{
-    margin-top: 0;
-  }
+.results__item:first-child{
+  margin-top: 0;
 }
 .results__details{
   padding: 0 32px 32px 32px;
