@@ -1,0 +1,184 @@
+.sr-only,
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.results{
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
+  display: grid;
+  margin-bottom: 32px;
+  li{
+    padding: 0;
+    border: none;
+    border-top: 2px solid #bac4c8;
+  }
+  li.last{
+    padding-bottom: 8px;
+    border-bottom: 2px solid #bac4c8;
+  }
+  li.last h3{
+    margin: 24px 0 0;
+  }
+}
+.results__item{
+  :first-child{
+    margin-top: 0;
+  }
+}
+.results__details{
+  padding: 0 32px 32px 32px;
+  position: relative;
+  >div{
+    width: 100%;
+    float: left;
+  }
+}
+
+
+
+.viewToggle {
+    margin: 0px 18px 20px 18px;
+}
+
+
+ .results li .results__details>div {
+    // max-width: calc( 100% * 1/2);
+    // min-width: calc( 100% * 1/2);
+    width: 100%;
+    float: left;
+}
+
+ .results li .results__details>div>p:first-of-type {
+    font-size: 16px;
+    line-height: 16px;
+    color: #425462;
+}
+
+ .nhsuk-grid .results__item p {
+    padding: 0;
+}
+
+ .nhsuk-grid .results__name {
+    margin-top: 8px;
+}
+
+ .results li .results__details {
+    padding: 0;
+    clear: both;
+    float: left;
+    width: 100%;
+    width: 100%;
+}
+
+ .nhsuk-grid .results__item p {
+    padding: 0;
+}
+
+ .nhsuk-grid .results__item__link {
+    margin-top: 8px;
+}
+
+ .searchAgain {
+    margin: 0 16px 32px;
+    a {
+      margin-left:32px;
+      position: relative;
+      &:before {
+        content: "\2190";
+        position: absolute;
+        left:-32px;
+      }
+    }
+}
+
+ .results li .results__details>div {
+  max-width: calc( 100% * 1/2);
+  min-width: calc( 100% * 1/2);
+  width: 100%;
+  float: left;
+}
+
+ .results li .results__details>section {
+  max-width: calc( 100% * 1/2);
+  min-width: calc( 100% * 1/2);
+  width: 100%;
+  float: right;
+}
+
+
+ .results li .results__details .callout--info {
+  background-color: #fff;
+  border-left: 0;
+  border-top: 2px solid #669ed4;
+  margin-top: 10px;
+  float: right;
+  margin-top: 20px;
+  //  padding: 16px 24px; // this is when opening times exist
+  padding: 0 16px 24px;
+  .callout--info__mesg.open24 {
+    &:before {
+      content:"";
+      display: none;
+      color: white;
+      background: green;
+      border-radius: 18px;
+      height: 36px;
+      width: 36px;
+      max-height: 36px;
+      max-width: 36px;
+      text-align: center;
+      position: relative;
+      right: 10px;
+      top: 10px;
+      font-size: 36px;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-3);
+    }
+  }
+}
+
+.callout--info .openingTimes-panel {
+  position: relative;
+  margin-top: 20px;
+  .openingTimes-panel__toggle {
+    margin-left: 50px;
+    &:before {
+      content:"\203A";
+      display: inline-block;
+      color: white;
+      background: #005eb8;
+      border-radius: 18px;
+      height: 36px;
+      width: 36px;
+      max-height: 36px;
+      max-width: 36px;
+      text-align: center;
+      position: absolute;
+      left:0;
+      font-size: 36px;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-3);
+    }
+  }
+  .openingTimes-panel__content {
+    display: none;
+  }
+    .openingTimes-panel__content {
+      display: block;
+    }
+  }
+
