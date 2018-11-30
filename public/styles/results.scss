@@ -13,7 +13,7 @@
 .results{
   list-style: none;
   margin: 0;
-  padding: 0 16px;
+  padding: 0;
   display: grid;
   margin-bottom: 32px;
   li{
@@ -42,7 +42,7 @@
 }
 .results__name{
   padding: 0 0 0px;
-  margin-bottom: 8px;
+  margin-top: 8px;
 }
 .viewToggle {
     margin: 0px 18px 20px 18px;
@@ -96,8 +96,8 @@
 }
 
  .results li .results__details>section {
-  max-width: calc( 100% * 1/2);
-  min-width: calc( 100% * 1/2);
+  max-width: calc( 100% * 2/5);
+  min-width: calc( 100% * 2/5);
   width: 100%;
   float: right;
 }
@@ -163,11 +163,21 @@
       filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-3);
     }
   }
+
   .openingTimes-panel__content {
     display: none;
   }
-    .openingTimes-panel__content {
-      display: block;
-    }
-  }
 
+  .openingTimes-panel__content {
+    display: block;
+  }
+}
+
+p,
+.nhsuk-body {
+  font-weight: $nhsuk-font-normal;
+  margin: 16px 0 0;
+  @include mq($from: tablet) {
+    margin: 24px 0 0;
+  }
+}
