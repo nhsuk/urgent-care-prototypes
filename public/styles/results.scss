@@ -9,6 +9,7 @@
   clip: rect(0,0,0,0);
   border: 0;
 }
+
 .results{
   list-style: none;
   margin: 0;
@@ -39,20 +40,15 @@
     float: left;
   }
 }
-
-
-
+.results__name{
+  padding: 0 0 0px;
+  margin-bottom: 8px;
+}
 .viewToggle {
     margin: 0px 18px 20px 18px;
 }
 
 
- .results li .results__details>div {
-    // max-width: calc( 100% * 1/2);
-    // min-width: calc( 100% * 1/2);
-    width: 100%;
-    float: left;
-}
 
  .results li .results__details>div>p:first-of-type {
     font-size: 16px;
@@ -63,11 +59,6 @@
  .nhsuk-grid .results__item p {
     padding: 0;
 }
-
- .nhsuk-grid .results__name {
-    margin-top: 8px;
-}
-
  .results li .results__details {
     padding: 0;
     clear: both;

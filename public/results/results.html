@@ -11,9 +11,13 @@
     {
       href: "/index",
       text: "Services near you"
+    },
+    {
+      href: back,
+      text: service
     }
   ],
-  href: "/results/ae-finder",
+  href: "/finder/ae-finder",
   text: service
 })}}
 <div class="nhsuk-width-container">
@@ -101,7 +105,7 @@
                   </li>
                 </ol>
               </div>
-              {# <p class="searchAgain"><a href="/{{ }}">Search again</a></p> #}
+              <p class="searchAgain"><a href={{back}} >Search again</a></p>
             </div>
           </div>
         </div>
