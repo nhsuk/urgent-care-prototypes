@@ -93,6 +93,10 @@
   min-width: calc( 100% * 1/2);
   width: 100%;
   float: left;
+  @include mq($until: tablet) {
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
 
  .results li .results__details>section {
@@ -100,6 +104,10 @@
   min-width: calc( 100% * 2/5);
   width: 100%;
   float: right;
+  @include mq($until: tablet) {
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
 
 
