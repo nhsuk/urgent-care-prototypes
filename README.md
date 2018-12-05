@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/nhsuk/nhsuk.urgent-care-prototypes/_apis/build/status/urgentcare-prototypes)](https://dev.azure.com/nhsuk/nhsuk.urgent-care-prototypes/_build/latest?definitionId=29)
 # Urgent Care Signposting Prototypes
 
 <a href="https://nhsuk-urgent-care-prototypes-main.azurewebsites.net/">Prototypes of the three possible solutions to improving urgent care signposting</a>, conceived as a part of a Magnum CI design sprint.
