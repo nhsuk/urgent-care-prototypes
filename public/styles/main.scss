@@ -165,8 +165,7 @@
   }
 }
 
-p,
-.nhsuk-body {
+.search-results p {
   font-weight: $nhsuk-font-normal;
   margin: 16px 0 0;
   @include mq($from: tablet) {

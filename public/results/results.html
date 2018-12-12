@@ -1,6 +1,7 @@
 {% from 'components/breadcrumb/macro.njk' import breadcrumb %}
 {% from 'components/back-link/macro.njk' import backLink %}
 {% extends 'layout.html' %}
+{% set body_class = 'search-results' %}
 
 {% block content %}
   {{ breadcrumb({

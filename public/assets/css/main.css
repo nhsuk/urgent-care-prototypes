@@ -6353,12 +6353,10 @@ b {
 .callout--info .openingTimes-panel .openingTimes-panel__content {
   display: block; }
 
-p,
-.nhsuk-body {
+.search-results p {
   font-weight: 400;
   margin: 16px 0 0; }
 
 @media (min-width: 40.0625em) {
-  p,
-  .nhsuk-body {
+  .search-results p {
     margin: 24px 0 0; } }

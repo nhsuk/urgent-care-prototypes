@@ -37,7 +37,33 @@ function renderPath (path, res, next) {
     if (path === '') {
       path = 'index'
     }
-  
+    switch(path) {
+      case "walk-in-centre-finder":
+        path = "finder/walk-in-finder";
+        break;
+      case "ae-finder":
+       path = "finder/ae-finder";
+        break;
+        case "google/search-ae":
+        path = "google/ae-search";
+        break;
+        case "google/search-wi":
+        path = "google/walk-in-search";
+        break;
+      case "uti-carecard-111":
+       path = "conditions/uti-carecard-111";
+        break;
+        case "uti-carecard-expander":
+        path = "conditions/uti-carecard-expander";
+         break;
+         case "hand-pain-111":
+       path = "conditions/hand-pain-111";
+        break;
+        case "hand-pain-expander":
+        path = "conditions/hand-pain-expander";
+         break;
+    
+    }
     renderPath(path, res, next)
   }
   
