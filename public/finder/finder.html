@@ -1,54 +1,56 @@
 {% from 'components/breadcrumb/macro.njk' import breadcrumb %}
+{% from 'components/input/macro.njk' import input %}
+{% from 'components/button/macro.njk' import button %}
 {% extends 'layout.html' %}
 
 {% block content %}
-{{ breadcrumb({
-  items: [
-    {
-      href: "/index",
-      text: "Home"
-    }
-  ],
-  href: "/index",
-  text: "Services near you"
-})}}
-<div class="nhsuk-width-container">
-  <main id="maincontent" class="nhsuk-main-wrapper util-nofocus">
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-full">
-        <div class="nhsuk-page-heading">
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/index",
+        text: "Home"
+      }
+    ],
+    href: "/index",
+    text: "Services near you"
+  })}}
+  <div class="nhsuk-width-container">
+    <main id="maincontent" class="nhsuk-main-wrapper util-nofocus">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
           <h1>{{ heading }}</h1>
         </div>
       </div>
-      <div class="nhsuk-grid-column-full">
-        <div class="nhsuk-reading-width">
-          <div class="nhsuk-page-content">
-          {% block inset %}
-          {% endblock %}
-            <div class="nhsuk-app__search">
-              <div class="search-container">
-                <form method="get" class="form" action="{{ actionLink }}">
-                  <div>
-                    <div class="form-group ">
-                      <label for="location">Enter a town, city or postcode in England</label>
-                    </div>
-                    <input autocomplete="off" type="text" class="form-control" name="location" id="location" value="">
-                  </div>
-                  <div class="form-item-wrapper">
-                    <div class="form-group">
-                      <input type="submit" class="button" value="Search">
-                    </div>
-                  </div>
-                  <div class="geo-locate">
-                    <p><a class="button button--secondary geo-locate--locate" href="#">Use your location</a></p>
-                  </div>
-                </form>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+        {% block inset %}
+        {% endblock %}
+        </div>
+      </div>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <form method="get" class="form" action="{{ actionLink }}">
+              <div class="nhsuk-form-group">
+                {{ input({
+                  "label": {
+                    "text": "Enter a town, city or postcode in England"
+                  },
+                  "classes": "nhsuk-input--width-20"
+                }) }}
               </div>
-            </div>
+              <div class="nhsuk-form-group">
+                {{ button({
+                  "text": "Search"
+                }) }}
+                {{ button({
+                    "text": "Use your location",
+                    "classes": "nhsuk-button--secondary",
+                    "href": "#"
+                }) }}
+            </form>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-</div>
+    </main>
+  </div>
 {% endblock %}

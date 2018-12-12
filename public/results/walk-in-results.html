@@ -1,4 +1,16 @@
 {% extends 'results/results.html' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
 {% set title = 'Walk-in centres near EC1V' %}
 {% set heading = 'Walk-in centres near EC1V' %}
-{% set serviceType = 'walk-in centre' %}
+{% set service = "Find a walk-in centre" %}
+{% set finder = "/finder/walk-in-finder" %}
+
+{% block inset %}
+
+{{ insetText({
+    "HTML": "<h3>Not sure if a walk-in centre is what you need?</h3>
+                <p>Go to <a href='https://111.nhs.uk/'>111.nhs.uk</a> or <a href='tel: 111'>call 111</a> to find out
+                  the right place to get help.</p>"
+}) }}
+
+{% endblock %}
