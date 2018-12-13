@@ -1,39 +1,30 @@
-const app = require('express')();
 const express = require('express');
-const nunjucks = require('nunjucks');
-const routing = require('./config/routing');
+const app = express();
 const path = require('path');
+const nunjucks = require('nunjucks');
+const routing = require('./routing');
 
 app.set('view engine', 'html');
-app.set('port', process.env.PORT || 3000);
-app.use('/assets', express.static(path.join(__dirname, 'app/assets')));
-app.use('/nhsuk-frontend', express.static(path.join(__dirname, '/node_modules/nhsuk-frontend-test')));
-
+app.set('port', process.env.PORT || 8081);
+app.use('/assets', express.static(path.join(__dirname, '/public/assets')));
+app.use('/nhsuk-frontend', express.static(path.join(__dirname, '/node_modules/nhsuk-frontend/')));
+app.use('/jquery', express.static(path.join(__dirname, '/node_modules/jquery/')));
 var appViews = [
-  path.join(__dirname, '/node_modules/nhsuk-frontend-test/'),
-  path.join(__dirname, '/app/views/')
-]
+    path.join(__dirname, '/node_modules/nhsuk-frontend/packages/'),
+    path.join(__dirname, '/public')
+  ]
 
 nunjucks.configure(appViews, {
-  autoescape: true,
-  express: app,
-  noCache: true,
-  watch: true
+    autoescape: true,
+    express: app,
+    noCache: true,
+    watch: true
 })
 
 app.get(/^([^.]+)$/, function (req, res, next) {
   routing.matchRoutes(req, res, next)
 })
 
-if (app.get('env') === 'production') {
-  app.use(function(err, req, res, next) {
-    console.error(err.stack);
-    res.sendStatus(err.status || 500);
-  });
-}
-
 app.listen(app.get('port'), function() {
-  console.log('Listening for changes at http://localhost:' + app.get('port'));
+    console.log('Listening for changes at http://localhost:' + app.get('port'));
 });
-
-module.exports = app;

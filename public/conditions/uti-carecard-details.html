@@ -1,0 +1,38 @@
+{% extends "conditions/uti.html"%}
+{% from 'components/care-card/macro.njk' import careCard %}
+{% from 'components/details/macro.njk' import details %}
+
+{% block redcard %}
+  {{ careCard({
+    "type": "urgent",
+    "heading": "Get advice from 111 if you have:",
+    "HTML": "
+      <ul>
+        <li>pain in your sides or lower back</li>
+        <li>a very high temperature or you feel hot and shivery </li>
+        <li>felt sick or been sick</li>
+        <li>
+            <a href='https://www.nhs.uk/conditions/diarrhoea-and-vomiting/'>diarrhoea</a>
+        </li>
+      </ul>
+      <p>These symptoms suggest a kidney infection, which can be serious if it isn't treated.<p>
+      <p>111 will tell you what to do. They can tell you the right place to get help if you need to see someone.</p>
+      <p>Go to
+        <a href='https://111.nhs.uk/zzyzx'>111.nhs.uk</a> or
+        <a href='tel: 111'>call 111</a>
+      </p>
+      <details class='nhsuk-details'>
+        <summary class='nhsuk-details__summary' role='button' aria-controls='details-content-1' aria-expanded='false' style='padding: 0 0 0 20px;'>
+          <span class='nhsuk-details__summary-text'>
+              Other ways to get help
+          </span>
+        </summary>
+        <div class='nhsuk-details__text' id='details-content-1' aria-hidden='true' style='padding-left: 20px;'>
+          <h4>Get an urgent GP appointment</h4>
+          <p>A GP may be able to treat you.</p>
+          <p>Ask your GP practice for an urgent appointment.</p>
+        </div>
+      </details> 
+    "
+  }) }}
+{% endblock %}

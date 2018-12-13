@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>            
+            .logo{
+                width: 150px;
+                display: block;
+                margin: 50px auto 0 auto;
+            }
+    
+            form {
+                width: 90%;
+                margin: 30px auto 0 auto;
+                position: relative;
+            }
+            
+            .search-input{
+                width: 100%;
+                height: 42px;
+                display: block;
+                padding: 12px 50px 12px 12px;
+                border:#d9d9d9 1px solid;
+                border-radius: 5px;
+                font-size: 16px;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            .button{
+                width: 45px;
+                height: 42px;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: url(/assets/images/google-search-button.png) top right no-repeat;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 999;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="logo" src="/assets/images/google-logo.png">
+        <form action="{{ actionLink }}">
+            <input type="text" class="search-input">
+            <input type="image" src="/assets/images/google-search-button.png" class="button" />
+        </form>
+    </body>
+</html>

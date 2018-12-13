@@ -1,0 +1,95 @@
+{% from 'components/hero/macro.njk' import hero %}
+{% extends 'layout.html' %}
+{% set title = 'Home' %}
+
+{% block content %}
+{{ hero({
+"heading": "Urgent Care Signposting Prototypes",
+"text": "Prototypes of the three possible solutions to improving urgent care signposting, conceived as a part of a Magnum CI design sprint."
+}) }}
+             
+<main id="main-content" class="nhsuk-home-page">
+        <div class="nhsuk-width-container">
+            <div class="nhsuk-main-wrapper">
+                <div class="nhsuk-grid">
+                    <div class="nhsuk-grid__item nhsuk-grid__item--full">
+    
+                        <h2>Prototypes</h2>
+                        <ul>
+                            <li>
+                                <p>Care carder - UTI</p>
+                                <ol>
+                                    <li>
+                                        <a href="/conditions/uti-carecard-111">UTI 111 fall-back</a>
+                                    </li>
+                                    <li>
+                                        <a href="/conditions/uti-carecard-expander">UTI expander</a>
+                                    </li>
+                                    <li>
+                                        <a href="/conditions/uti-carecard-details">UTI details - candidate for live test</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Care carder - Hand Pain</p>
+                                <ol>
+                                    <li>
+                                        <a href="/conditions/hand-pain-111">Hand pain fall-back</a>
+                                    </li>
+                                    <li>
+                                        <a href="/conditions/hand-pain-expander">Hand pain expander with action links</a>
+                                    </li>
+                                    <li>
+                                        <a href="/conditions/hand-action-link-details">Hand pain details with action links</a>
+                                    </li>
+                                    <li>
+                                        <a href="/conditions/hand-pain-details">Hand pain details - candidate for live test</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>High cholesterol approaches </p>
+                                <ol>
+                                    <li>
+                                         <a href="https://nhsuk-live-review-experimental-health-literacy.dev.beta.nhschoices.net/conditions/high-cholesterol-1">High cholesterol approach 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://nhsuk-live-review-experimental-health-literacy.dev.beta.nhschoices.net/conditions/high-cholesterol-2/">High cholesterol approach 2</a>
+                                  </li>
+                                </ol>                               
+                            </li>  
+                            <li>
+                                    <p>Interruptor & Pete for Walk-in centre</p>
+                                    <ol>
+                                        <li><a href="/google/walk-in-search">Google journey Walk-in</a></li>
+                                        <li><a href="/finder/walk-in-finder">Direct to Walk-in finder</a></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                <p>Interruptor & Pete for A&E</p>
+                                    <ol>
+                                        <li><a href="/google/ae-search">Google journey A&E</a></li>
+                                        <li><a href="/finder/ae-finder">Direct to A&E finder</a></li>
+                                    </ol>
+                                </li> 
+                                                      
+                        </ul>
+    
+                        <div class="nhsuk-reading-width">
+                            <h2>Useful information</h2>
+                            <ul>
+                                <li>the
+                                    <a href="https://github.com/nhsuk/urgent-care-prototypes.git">public GitHub repository</a> of this project.</p>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock content %}
+
+
+    

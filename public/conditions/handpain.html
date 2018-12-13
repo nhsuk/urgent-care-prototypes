@@ -1,0 +1,159 @@
+{% from 'components/breadcrumb/macro.njk' import breadcrumb %}{% from 'components/care-card/macro.njk' import careCard %}  {% extends 'layout.html' %} {% from 'components/action-link/macro.njk'
+import actionLink %} {% block content %} {{ breadcrumb({  items: [
+    {
+      href: "/index",
+      text: "Home"
+    }   
+    ], href: "https://www.nhs.uk/conditions",
+      text: "Health A-Z" }) }}
+
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper" id="main-content">
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+                <div class="nhsuk-page-heading">
+                    <h1>
+
+                        Hand pain
+
+                    </h1>
+
+                </div>
+
+                <div class="nhsuk-page-content">
+                    <section id="">
+                        <p>
+                            <strong>You can ease hand pain with simple steps at home. See a GP if the pain doesn't go away.</strong>
+                        </p>
+                    </section>
+                    <section id="things-you-can-try">
+                        <h2>How to ease hand pain yourself</h2>
+
+                        <p>Try these things first:</p>
+
+                        <ul>
+                            <li>avoid activities that cause pain, if possible</li>
+                            <li>use an ice pack (or a bag of frozen peas wrapped in a tea towel) on the painful area for up to
+                                20 minutes every 2 to 3 hours</li>
+                            <li>take paracetamol or ibuprofen</li>
+                        </ul>
+
+                        <p>If you have pain after an injury, don't take ibuprofen for the first 48 hours, as it may slow down
+                            healing.
+                        </p>
+                    </section>
+                    <section id="how-a-pharmacist-can-help">
+                        <h2>A pharmacist can help with hand pain</h2>
+
+                        <p>A pharmacist can offer practical advice and may suggest:</p>
+
+                        <ul>
+                            <li>the best painkiller – this may be tablets, or a cream or gel you rub on the skin</li>
+                            <li>things you can buy to help, like cold packs and splints</li>
+                            <li>seeing a GP, if you need to</li>
+                        </ul>
+
+
+                        {{ actionLink({ "text": "Find a pharmacy", "href": "https://beta.nhs.uk/find-a-pharmacy/" }) }}
+                    </section>
+
+                    <section id="when-to-get-medical-help">
+
+                        {{ careCard({ "type": "non-urgent", "heading": "See a GP if:", "HTML": "
+                        <ul>
+                            <li>you see no improvement after treatment at home</li>
+                            <li>the pain gets worse</li>
+                            <li>the pain keeps coming back</li>
+                        </ul>
+                        " }) }} {% block carecard %} {% endblock %}
+
+                    </section>
+
+                    <section id="causes"> 
+                         <h2>Common causes of hand pain</h2> 
+                          <p>Your symptoms might give you an idea of what's causing your hand pain. But don't self-diagnose –
+                            see a GP if you're worried.</p>
+                    <div class="nhsuk-table__panel-with-heading-tab">                        
+                                                
+                            <div class="nhsuk-table-responsive">
+                                    <table class="nhsuk-table">  
+                                            <thead class="nhsuk-table__head">
+                                                    <tr class="nhsuk-table__row">
+                                                            <th class="nhsuk-table__header" scope="col">Symptoms</th>
+                                                            <th class="nhsuk-table__header" scope="col">Possible cause</th>
+                                </tr>
+                            </thead>
+                            <tbody class="nhsuk-table__body">
+                                    <tr class="nhsuk-table__row">
+                                            <td class="nhsuk-table__cell">Tingling and numbness in the thumb-side of the hand and fingers</td>
+                                            <td class="nhsuk-table__cell">
+                                        <a href="https://www.nhs.uk/conditions/carpal-tunnel-syndrome/">carpal tunnel syndrome</a>
+                                    </td>
+                                </tr>
+                                <tr class="nhsuk-table__row">
+                                        <td class="nhsuk-table__cell">Pain, tenderness and swelling in the wrist or thumb</td>
+                                        <td class="nhsuk-table__cell">
+                                        <a href="https://www.nhs.uk/conditions/sprains-and-strains/">sprain and strain</a>,
+                                        <a href="https://www.nhs.uk/conditions/osteoarthritis">osteoarthritis</a> or
+                                        <a href="https://www.nhs.uk/conditions/tendonitis/">tendonitis</a>
+                                    </td>
+                                </tr>
+                                <tr class="nhsuk-table__row">
+                                        <td class="nhsuk-table__cell">Throbbing, tingling, numbness or cramp in the wrists and hands</td>
+                                        <td class="nhsuk-table__cell">
+                                        <a href="https://www.nhs.uk/conditions/repetitive-strain-injury-rsi">repetitive strain injury (RSI)</a> or
+                                        <a href="https://www.nhs.uk/conditions/tendonitis/">tendonitis</a>
+                                    </td>
+                                </tr>
+                                <tr class="nhsuk-table__row">
+                                        <td class="nhsuk-table__cell">Swelling and stiffness in the joints of the wrist, hand or near the finger nails</td>
+                                        <td class="nhsuk-table__cell">
+                                        <a href="https://www.nhs.uk/conditions/osteoarthritis/">osteoarthritis</a>
+                                    </td>
+                                </tr>
+                                <tr class="nhsuk-table__row">
+                                        <td class="nhsuk-table__cell">Stiffness, warmth and swelling – especially early in the morning – in the joints of the
+                                        knuckles, wrists or fingers</td>
+                                        <td class="nhsuk-table__cell">
+                                        <a href="https://www.nhs.uk/conditions/rheumatoid-arthritis/">rheumatoid arthritis</a>
+                                    </td>
+                                </tr>
+                                <tr class="nhsuk-table__row">
+                                        <td class="nhsuk-table__cell">A soft round lump or swelling at the back of the wrist or between the fingers</td>
+                                        <td class="nhsuk-table__cell">
+                                        <a href="https://www.nhs.uk/conditions/ganglion/">ganglion</a>
+                                    </td>
+                                </tr>
+                                <tr class="nhsuk-table__row">
+                                        <td class="nhsuk-table__cell">Pain moving your thumb, and swelling and creaking near the base of your thumb</td>
+                                        <td class="nhsuk-table__cell">
+                                        <a href="https://www.nhs.uk/conditions/tendonitis/">tendonitis</a> or
+                                        <a href="https://www.nhs.uk/conditions/arthritis/">arthritis</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+</div>
+                    </div>
+
+                    </section>
+
+
+
+                    <div class="nhsuk-c-review-date">
+                        <p class="nhsuk-body-s">
+                            Page last reviewed: 02/08/2017
+                            <br/> Next review due: 02/08/2020
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'finder/finder.html' %}
+{% from 'components/inset-text/macro.njk' import insetText %}
+{% set title = 'Find an A&E' %}
+{% set heading = 'Find your nearest A&E' %}
+{% set actionLink = '/results/ae-results' %}
+
+{% block inset %}
+<div>
+    <p>A&E is for serious accidents and life-threatening emergencies.</p>
+</div>
+
+{{ insetText({
+    "HTML": "<p class='nhsuk-u-font-weight-bold'>Not sure if A&E is what you need? Go to <a href='https://111.nhs.uk/'>111.nhs.uk</a> or <a href='tel: 111'>call 111</a> to find out the right place to go.</p>"
+}) }}
+
+{% endblock %}

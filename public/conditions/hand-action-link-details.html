@@ -1,0 +1,52 @@
+{% set title = 'Hand pain action link details' %}
+{% extends 'conditions/handpain.html' %}
+{% block carecard %}
+  {{ careCard({
+    "type": "urgent",
+    'heading': "Get advice from 111 if:",
+    "HTML": "
+      <ul>
+          <li>you have extreme pain after an injury</li>
+          <li>your wrist or finger are a funny shape </li>
+          <li>there was a snap or grinding noise at the time of injury</li>
+          <li>you have difficulty moving the hand, wrist or fingers</li>
+      </ul>
+      <p> These are signs of a broken bone.</p>
+      <p>111 will tell you what to do. They can arrange a phone call from a nurse or doctor if you need one.</p>
+      <br/>
+      <div class='nhsuk-action-link'>
+        <a class='nhsuk-action-link__link' href='https://111.nhs.uk/zzyzx'>
+          <svg class='nhsuk-icon nhsuk-icon__arrow-right-circle' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'>
+            <path d='M0 0h24v24H0z' fill='none'></path>
+            <path d='M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z'></path>
+          </svg>
+          <span class='nhsuk-action-link__text'>Go to 111.nhs.uk</span>
+        </a>
+      </div>
+      <div class='nhsuk-action-link'>
+        <a class='nhsuk-action-link__link' href='tel: 111'>
+          <svg class='nhsuk-icon nhsuk-icon__arrow-right-circle' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'>
+            <path d='M0 0h24v24H0z' fill='none'></path>
+            <path d='M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z'></path>
+          </svg>
+          <span class='nhsuk-action-link__text'>call 111</span>
+        </a>
+      </div>
+
+      <details class='nhsuk-details'>
+        <summary class='nhsuk-details__summary' role='button' aria-controls='details-content-1' aria-expanded='false' style='padding: 0 0 0 20'>
+          <span class='nhsuk-details__summary-text'>
+            Other ways to get help
+          </span>
+        </summary>
+        <div class='nhsuk-details__text' id='details-content-1' aria-hidden='true'style='padding-left: 20'>
+          <h4>Go to an urgent treatment centre</h4>
+          <p>Urgent treatment centres are places you can go if you need help now, but it's not an emergency.</p>
+          <p>They're also called walk-in centres or minor injuries units.</p>
+          <p>You may be seen quicker than you would at A&E.</p>
+          <p><a href='https://www.nhs.uk/service-search/Urgent-Treatment-Centre/LocationSearch/10022'>Find an urgent treatment centre</a></p>
+        </div>
+      </details>
+    " }) 
+  }}
+{% endblock %}
